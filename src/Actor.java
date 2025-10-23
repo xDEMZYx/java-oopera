@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Actor extends Person {
-    public int height;
+    private int height;
 
     public Actor(String name,String surName, Gender gender, int height) {
         super(name, surName, gender);
@@ -10,8 +10,8 @@ public class Actor extends Person {
 
     @Override
     public String toString() {
-        return  name +
-                " " + surName +
+        return  getName() +
+                " " + getSurName() +
                 "(" + height + " см)";
     }
 
